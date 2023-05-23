@@ -7,6 +7,8 @@ public class Managment : MonoBehaviour
     public Camera Camera;
 
     public PlayerMovent PlayerMovent;
+
+    public ParticleSystem ClickEffect;
     // Start is called before the first frame update
     void Start()
     {
