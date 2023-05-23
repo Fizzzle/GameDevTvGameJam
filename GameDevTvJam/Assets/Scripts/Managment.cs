@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// Author Viktor
 public class Managment : MonoBehaviour
 {
+    
+    [Header("Player Setting")]
     public Camera Camera;
-
     public PlayerMovent PlayerMovent;
-
+    
+    [Header("Effect Settings")]
     public ParticleSystem ClickEffect;
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -29,7 +29,10 @@ public class Managment : MonoBehaviour
             {
                 if (hit.collider.tag == "Ground")
                 {
+                    ParticleSystem effectClick = Instantiate(ClickEffect, hit.point,
+                        Quaternion.LookRotation(Camera.transform.position));
                     PlayerMovent.WhenClickOnGround(hit.point);
+                    Destroy(effectClick, 1f);
                 } 
             }
         }

@@ -15,7 +15,7 @@ public class Rotate : MonoBehaviour
         
         }
 
-        if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.E))
 	    {
 	        rotatingClockwise = !rotatingClockwise;
 			AudioManager.Instance.PlayTurnBlockSound(); // звук переключения блока 
