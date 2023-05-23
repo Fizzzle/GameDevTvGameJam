@@ -3,7 +3,12 @@ guid: 6ebdf7b4677dba241a3cc825e2ea8928
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - LightSider: {instanceID: 0}
+  - DarkSider: {instanceID: 0}
+  - ManagmentPosition: {instanceID: 0}
+  - DarkSiderEffect: {fileID: 1105467716601355599, guid: e3b8ce847269ee24a93551ad9ab35d0f, type: 3}
+  - LightSiderEffect: {fileID: 1932138992575180636, guid: f4348083ad2834d47b5bcc1846d3fa2d, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

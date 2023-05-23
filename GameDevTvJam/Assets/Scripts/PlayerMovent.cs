@@ -10,18 +10,14 @@ using UnityEngine.AI;
 public class PlayerMovent : MonoBehaviour
 {
 
-    
+    [Header("MoveSetting Settings")]
     public NavMeshAgent NavMeshAgent;
     
+    [Header("GroundChecking Settings")]
     public Transform groundChecking;
     public float groundDistance = 0.4f;
     public LayerMask GroundMask;
     bool isGround;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -29,9 +25,10 @@ public class PlayerMovent : MonoBehaviour
         CheckGround();
     }
 
-    public virtual void WhenClickOnGround(Vector3 point)
+    public virtual void WhenClickOnGround(Vector3 point, int MoveSpeed = 3)
     {
         NavMeshAgent.SetDestination(point);
+        NavMeshAgent.speed = MoveSpeed;
     }
 
     void CheckGround()
@@ -40,10 +37,6 @@ public class PlayerMovent : MonoBehaviour
         if (!isGround)
         {
             NavMeshAgent.speed = 0;
-        }
-        else
-        {
-            NavMeshAgent.speed = 3;
         }
     }
 }

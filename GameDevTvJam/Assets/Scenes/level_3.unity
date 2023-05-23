@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1692,6 +1692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Camera: {fileID: 1646236800}
   PlayerMovent: {fileID: 868024419}
+  ClickEffect: {fileID: 0}
 --- !u!4 &842901012
 Transform:
   m_ObjectHideFlags: 0
@@ -4183,6 +4184,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LightSider: {fileID: 0}
   DarkSider: {fileID: 0}
+  DarkSiderEffect: {fileID: 0}
+  LightSiderEffect: {fileID: 0}
 --- !u!4 &1813610550
 Transform:
   m_ObjectHideFlags: 0
