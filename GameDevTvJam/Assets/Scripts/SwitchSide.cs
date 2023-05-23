@@ -26,6 +26,8 @@ public class SwitchSide : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            AudioManager.Instance.PlayIllusionSwitchSound();
+
             if (SwitchSider)
             {
                 LightSider.SetActive(true);
