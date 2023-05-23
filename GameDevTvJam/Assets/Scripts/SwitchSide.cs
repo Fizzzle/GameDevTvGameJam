@@ -12,20 +12,13 @@ public class SwitchSide : MonoBehaviour
     public GameObject DarkSider;
     private bool SwitchSider = false;
     public bool HideDark = true;
-    public Transform ManagmentPosition;
 
-    [Header("Effect Settings")]
-    public ParticleSystem DarkSiderEffect;
-    public ParticleSystem LightSiderEffect;
-    
-    
 
     // Start is called before the first frame update
     void Awake()
     {
         LightSider = GameObject.FindGameObjectWithTag("LightSide");
         DarkSider = GameObject.FindGameObjectWithTag("DarkSide");
-        ManagmentPosition = GameObject.FindGameObjectWithTag("Managment").transform;
     }
 
     private void Start()
