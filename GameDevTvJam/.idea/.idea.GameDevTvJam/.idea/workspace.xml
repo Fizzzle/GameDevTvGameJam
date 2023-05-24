@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="794a0515-c752-4e84-9be4-ab5f7362cf0d" name="Changes" comment="1. LightSider + DarkSider effects = ParticleGroup&#10;2. DamageScreen&#10;3. Effects &#10;4. Particle&#10;5. fixed&#10;6. Canvas">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Interface/DamageScreen.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Interface/DamageScreen.prefab.meta" afterDir="false" />
+    <list default="true" id="794a0515-c752-4e84-9be4-ab5f7362cf0d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Effect/VFXEffectLight.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameDevTvJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameDevTvJam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state.map" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/backend_profiler0.traceevents" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/backend_profiler0.traceevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/fullprofile.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/fullprofile.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/tundra.digestcache" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/tundra.digestcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Bee/tundra.log.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/tundra.log.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Search/transactions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Search/transactions.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +32,11 @@
     <option name="RESET_MODE" value="HARD" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -31,15 +48,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Asus/Documents/GitHub/GameDevTvGameJam/GameDevTvJam/Library/SceneVisibilityState.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Asus/Documents/GitHub/GameDevTvGameJam/GameDevTvJam/Library/SceneVisibilityState.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Asus/Documents/GitHub/GameDevTvGameJam/GameDevTvJam/Library/SceneVisibilityState.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Asus/Documents/GitHub/GameDevTvGameJam/GameDevTvJam/Library/SceneVisibilityState.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Asus/Documents/GitHub/GameDevTvGameJam/GameDevTvJam/Library/SceneVisibilityState.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Asus/Documents/GitHub/GameDevTvGameJam/GameDevTvJam/Library/SceneVisibilityState.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Asus/Documents/GitHub/GameDevTvGameJam/GameDevTvJam/Library/SceneVisibilityState.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Asus/Documents/GitHub/GameDevTvGameJam/GameDevTvJam/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Asus/Documents/GitHub/GameDevTvGameJam/GameDevTvJam/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Rush Shooter/Assets/Script/Player/DamageScreen.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Rush Shooter/Assets/Script/Player/PlayerHealth.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -58,7 +66,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "project.propVCSSupport.ChangelistConflict",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -119,6 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1684782196755</updated>
       <workItem from="1684782207943" duration="664000" />
+      <workItem from="1684966651355" duration="1828000" />
     </task>
     <task id="LOCAL-00001" summary="CheckNew">
       <created>1684880942013</created>
@@ -176,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684965053799</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add files">
+      <created>1684966219722</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684966219722</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +222,11 @@
     <MESSAGE value="Image effect for switch and  Prohibition to switch if in another dimension he is airborne" />
     <MESSAGE value="Errors fix" />
     <MESSAGE value="1. LightSider + DarkSider effects = ParticleGroup&#10;2. DamageScreen&#10;3. Effects &#10;4. Particle&#10;5. fixed&#10;6. Canvas" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. LightSider + DarkSider effects = ParticleGroup&#10;2. DamageScreen&#10;3. Effects &#10;4. Particle&#10;5. fixed&#10;6. Canvas" />
+    <MESSAGE value="add files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add files" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
