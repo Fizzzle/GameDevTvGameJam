@@ -16,7 +16,9 @@ public class SwitchSide : MonoBehaviour
     private PlayerMovent PlayerMovent;
 
 
-    [Header("Side Settings")] public Image DamageImage;
+    [Header("Effects Settings")] public ParticleSystem LightSideEffects;
+    public ParticleSystem DarkSideEffects;
+    public Image DamageImage;
 
 
     // Start is called before the first frame update
@@ -31,10 +33,12 @@ public class SwitchSide : MonoBehaviour
     {
         if (HideDark)
         {
+            LightSider.SetActive(true);
             DarkSider.SetActive(false);
         }
         else
         {
+            DarkSider.SetActive(true);
             LightSider.SetActive(false);
         }
         
@@ -43,6 +47,7 @@ public class SwitchSide : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        DarkSiderProperties();
         Switch();
     }
 
@@ -55,11 +60,19 @@ public class SwitchSide : MonoBehaviour
             
             if (SwitchSider)
             {
-
+                
                 LightSider.SetActive(true);
                 DarkSider.SetActive(false);
                 StartCoroutine(CheckerLight());
                 SwitchSider = !SwitchSider;
+                if (DarkSideEffects != null)
+                {
+                    if (LightSider.active)
+                    {
+                        DarkSideEffects.Play();
+                    }
+                }
+                
             }
             else
             {
@@ -67,6 +80,14 @@ public class SwitchSide : MonoBehaviour
                 DarkSider.SetActive(true);
                 StartCoroutine(CheckerDark());
                 SwitchSider = !SwitchSider;
+                if (LightSideEffects != null)
+                {
+                    if (DarkSider.active)
+                    {
+                        LightSideEffects.Play();
+                    }
+                }
+                
             }
             
             
@@ -108,5 +129,19 @@ public class SwitchSide : MonoBehaviour
             DamageImage.enabled = false;
         }
         
+    }
+
+    void DarkSiderProperties()
+    {
+        if (DarkSider.active)
+        {
+            
+            Time.timeScale = 0.7f;
+        }
+        else
+        {
+            
+            Time.timeScale = 1f;
+        }
     }
 }

@@ -35,7 +35,7 @@ public class Managment : MonoBehaviour
                     {
                         ParticleSystem effectClick = Instantiate(ClickEffect, hit.point,
                             Quaternion.LookRotation(Camera.transform.position));
-                        Destroy(effectClick, 1);
+                        Destroy(effectClick.gameObject, 1);
                     }
                     
                 } 
