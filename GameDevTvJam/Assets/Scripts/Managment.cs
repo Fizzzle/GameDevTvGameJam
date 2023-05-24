@@ -30,10 +30,14 @@ public class Managment : MonoBehaviour
             {
                 if (hit.collider.tag == "Ground")
                 {
-                    ParticleSystem effectClick = Instantiate(ClickEffect, hit.point,
-                        Quaternion.LookRotation(Camera.transform.position));
                     PlayerMovent.WhenClickOnGround(hit.point);
-                    Destroy(effectClick, 1);
+                    if (ClickEffect != null)
+                    {
+                        ParticleSystem effectClick = Instantiate(ClickEffect, hit.point,
+                            Quaternion.LookRotation(Camera.transform.position));
+                        Destroy(effectClick, 1);
+                    }
+                    
                 } 
             }
             // Пока тут самоповтор кода, вдруг не пригодиться, чтобы не заморачиваться зря
@@ -41,10 +45,14 @@ public class Managment : MonoBehaviour
             {
                 if (hit.collider.tag == "Ground")
                 {
-                    ParticleSystem effectClick = Instantiate(ClickEffect, hit.point,
-                        Quaternion.LookRotation(Camera.transform.position));
                     PlayerMovent.WhenClickOnGround(hit.point, 5);
-                    Destroy(effectClick, 1);
+                    if (ClickEffect != null)
+                    {
+                        ParticleSystem effectClick = Instantiate(ClickEffect, hit.point,
+                            Quaternion.LookRotation(Camera.transform.position));
+                        Destroy(effectClick, 1);
+                    }
+                   
                 } 
             }
         }

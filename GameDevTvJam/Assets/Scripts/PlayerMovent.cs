@@ -17,7 +17,7 @@ public class PlayerMovent : MonoBehaviour
     public Transform groundChecking;
     public float groundDistance = 0.4f;
     public LayerMask GroundMask;
-    bool isGround;
+    public bool isGround;
 
     // Update is called once per frame
     void Update()
