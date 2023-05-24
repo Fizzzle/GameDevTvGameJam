@@ -17,7 +17,7 @@ public class PauseGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //_pauseUI.SetActive(false);
+        _pauseUI.SetActive(false);
         _musicOnOff.onValueChanged.AddListener(ToggleMusic);
     }
 
