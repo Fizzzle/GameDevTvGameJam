@@ -475,6 +475,8 @@ MonoBehaviour:
   LightSideEffects: {fileID: 954018449}
   DarkSideEffects: {fileID: 2098399447}
   DamageImage: {fileID: 456182646}
+  LightMagicEffect: {fileID: 688350763}
+  DarkMagicEffect: {fileID: 1542301920}
 --- !u!1 &52120110
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,6 +2503,11 @@ Transform:
   m_Father: {fileID: 977451710}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &688350763 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7360871614003070865, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+  m_PrefabInstance: {fileID: 4838361925593838375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &707636415
 GameObject:
   m_ObjectHideFlags: 0
@@ -5687,6 +5694,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510690080}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!198 &1542301920 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8649745785877085623, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+  m_PrefabInstance: {fileID: 4838361925593838375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1563049577
 GameObject:
   m_ObjectHideFlags: 0
@@ -8460,6 +8472,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4678546020286242710, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: m_Name
+      value: DarkSideMagicEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4792653621786777294, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4838361924618561922, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -8506,6 +8526,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4838361924618561934, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6678817764345212136, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827607239716562352, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: m_Name
+      value: LightSideMagicEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080395288170045756, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7360871614003070865, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime0
+      value: 12336
+      objectReference: {fileID: 0}
+    - target: {fileID: 7360871614003070865, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime1
+      value: 21395
+      objectReference: {fileID: 0}
+    - target: {fileID: 7360871614003070865, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime2
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 7360871614003070865, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7360871614003070865, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.m_NumAlphaKeys
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966559437707008794, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

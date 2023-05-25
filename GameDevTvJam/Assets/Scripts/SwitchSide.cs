@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,6 +26,8 @@ public class SwitchSide : MonoBehaviour
     [Header("Effects Settings")] public ParticleSystem LightSideEffects;
     public ParticleSystem DarkSideEffects;
     public Image DamageImage;
+    public ParticleSystem LightMagicEffect;
+    public ParticleSystem DarkMagicEffect;
 
 
     // Start is called before the first frame update
@@ -185,6 +188,10 @@ public class SwitchSide : MonoBehaviour
             {
                 LightSideSkin();
                 DarkSideEffects.Play();
+                if (LightMagicEffect != null)
+                {
+                    LightMagicEffect.Play();
+                }
             }
         }
     }
@@ -201,6 +208,10 @@ public class SwitchSide : MonoBehaviour
             {
                 DarkSideSkin();
                 LightSideEffects.Play();
+                if (DarkMagicEffect != null)
+                {
+                    DarkMagicEffect.Play();
+                }
             }
         }
     }

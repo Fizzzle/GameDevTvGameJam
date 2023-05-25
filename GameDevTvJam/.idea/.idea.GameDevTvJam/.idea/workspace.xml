@@ -1,40 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="794a0515-c752-4e84-9be4-ab5f7362cf0d" name="Changes" comment="Errors">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Particles/ClickEffectMiss.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Particles/ClickEffectMiss.prefab.meta" afterDir="false" />
+    <list default="true" id="794a0515-c752-4e84-9be4-ab5f7362cf0d" name="Changes" comment="1. Скрипт Managment = теперь автономен. &#10;При добавление на сцену и старты игры он ищет камеру и игрока. &#10;А партиклы внутри самого скрипта автоматом стоят.&#10;&#10;2. Партикл мисс клика = красненький, типо тыкнул не на то. &#10;+ будет партикл для кнопки и\или плиты зелененьким. (чтобы разнообразить клики)&#10;&#10;3. Решил вопросы с переключением и багом со скином.">
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Particles/Teleport.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Particles/Teleport/DarkSide.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Particles/Teleport/DarkSide.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Particles/Teleport/LightSide.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Particles/Teleport/LightSide.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameDevTvJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameDevTvJam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Managment.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Managment.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles (ASSET STORE - Full)/Magic effects pack/Materials/MagicCircle.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Particles (ASSET STORE - Full)/Magic effects pack/Materials/MagicCircle.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles (ASSET STORE - Full)/Magic effects pack/Materials/MagicCircle2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Particles (ASSET STORE - Full)/Magic effects pack/Materials/MagicCircle2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles (ASSET STORE - Full)/Magic effects pack/Materials/Mask1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Particles (ASSET STORE - Full)/Magic effects pack/Materials/Mask1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Player/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managment.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managment.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SwitchSide.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SwitchSide.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/11/11495a367ec1da52ba82d15b3fd6bbb4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6e/6eff755d1908fadd079a4f789150bac6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/89/891c90fbba4362384a1f358c8a8b00fd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b5/b536baffb319e8915a96e9705c1b3083" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d8/d8a9a975952314ce5ca0098441534a7e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/64/64a0dc6df4b8242c6f42d2f46a2e700c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/TundraBuildState.state" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.ref.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.ref.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/fullprofile.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/fullprofile.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/tundra.digestcache" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/tundra.digestcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/tundra.log.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/tundra.log.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Search/transactions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Search/transactions.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685051867915</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="1. Скрипт Managment = теперь автономен. &#10;При добавление на сцену и старты игры он ищет камеру и игрока. &#10;А партиклы внутри самого скрипта автоматом стоят.&#10;&#10;2. Партикл мисс клика = красненький, типо тыкнул не на то. &#10;+ будет партикл для кнопки и\или плиты зелененьким. (чтобы разнообразить клики)&#10;&#10;3. Решил вопросы с переключением и багом со скином.">
+      <created>1685055179953</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1685055179953</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +273,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -289,7 +309,8 @@
     <MESSAGE value="32" />
     <MESSAGE value="Player update &#10;Lightspot for Snowboard + skinchanger" />
     <MESSAGE value="Errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Errors" />
+    <MESSAGE value="1. Скрипт Managment = теперь автономен. &#10;При добавление на сцену и старты игры он ищет камеру и игрока. &#10;А партиклы внутри самого скрипта автоматом стоят.&#10;&#10;2. Партикл мисс клика = красненький, типо тыкнул не на то. &#10;+ будет партикл для кнопки и\или плиты зелененьким. (чтобы разнообразить клики)&#10;&#10;3. Решил вопросы с переключением и багом со скином." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Скрипт Managment = теперь автономен. &#10;При добавление на сцену и старты игры он ищет камеру и игрока. &#10;А партиклы внутри самого скрипта автоматом стоят.&#10;&#10;2. Партикл мисс клика = красненький, типо тыкнул не на то. &#10;+ будет партикл для кнопки и\или плиты зелененьким. (чтобы разнообразить клики)&#10;&#10;3. Решил вопросы с переключением и багом со скином." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
