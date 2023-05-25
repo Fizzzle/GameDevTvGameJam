@@ -12,6 +12,7 @@ public class SwitchSide : MonoBehaviour
     public GameObject LightSider;
     public GameObject DarkSider;
     private bool SwitchSider = false;
+    private bool SwitchActive = true;
     public bool HideDark = true;
     private PlayerMovent PlayerMovent;
 
@@ -67,41 +68,18 @@ public class SwitchSide : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            // AudioManager.Instance.PlayIllusionSwitchSound();
+            if (SwitchActive)
+            {
+                // AudioManager.Instance.PlayIllusionSwitchSound();
+                if (SwitchSider)
+                {
+                    SwitchSiderLight();
+                }
+                else
+                {
+                    SwitchSiderDark();
 
-            
-            if (SwitchSider)
-            {
-                
-                LightSider.SetActive(true);
-                DarkSider.SetActive(false);
-                StartCoroutine(CheckerLight());
-                SwitchSider = !SwitchSider;
-                if (DarkSideEffects != null)
-                {
-                    if (LightSider.active)
-                    {
-                        LightSideSkin();
-                        DarkSideEffects.Play();
-                    }
                 }
-                
-            }
-            else
-            {
-                LightSider.SetActive(false);
-                DarkSider.SetActive(true);
-                StartCoroutine(CheckerDark());
-                SwitchSider = !SwitchSider;
-                if (LightSideEffects != null)
-                {
-                    if (DarkSider.active)
-                    {
-                        DarkSideSkin();
-                        LightSideEffects.Play();
-                    }
-                }
-                
             }
             
             
@@ -116,7 +94,17 @@ public class SwitchSide : MonoBehaviour
             LightSider.SetActive(true);
             DarkSider.SetActive(false);
             StartCoroutine(ShowEffectDamage());
+            yield return new WaitForSeconds(0.05f);
+            if (LightSider.active)
+            {
+                LightSideSkin();
+                SwitchSider = !SwitchSider;
+                
+            }
         }
+
+        
+
     }
     
     IEnumerator CheckerLight()
@@ -127,21 +115,32 @@ public class SwitchSide : MonoBehaviour
             LightSider.SetActive(false);
             DarkSider.SetActive(true);
             StartCoroutine(ShowEffectDamage());
+            yield return new WaitForSeconds(0.05f);
+            if (DarkSider.active)
+            {
+                DarkSideSkin();
+                SwitchSider = !SwitchSider;
+            }
+            
         }
+        
     }
     
     IEnumerator ShowEffectDamage()
     {
         if (DamageImage != null)
         {
+            SwitchActive = false;
             DamageImage.enabled = true;
             for (float t = 0.9f; t > 0f; t-= Time.deltaTime * 0.5f)
             {
                 DamageImage.color = new Color(0f, 0.4912767f, 1f, t);
                 yield return null;
             }
+            SwitchActive = true;
             DamageImage.enabled = false;
         }
+        
         
     }
 
@@ -172,5 +171,37 @@ public class SwitchSide : MonoBehaviour
         DarkLight.SetActive(true);
         Wheels.SetActive(false);
         Cap.SetActive(false);
+    }
+
+    void SwitchSiderLight()
+    {
+        LightSider.SetActive(true);
+        DarkSider.SetActive(false);
+        StartCoroutine(CheckerLight());
+        SwitchSider = !SwitchSider;
+        if (DarkSideEffects != null)
+        {
+            if (LightSider.active)
+            {
+                LightSideSkin();
+                DarkSideEffects.Play();
+            }
+        }
+    }
+
+    void SwitchSiderDark()
+    {
+        LightSider.SetActive(false);
+        DarkSider.SetActive(true);
+        StartCoroutine(CheckerDark());
+        SwitchSider = !SwitchSider;
+        if (LightSideEffects != null)
+        {
+            if (DarkSider.active)
+            {
+                DarkSideSkin();
+                LightSideEffects.Play();
+            }
+        }
     }
 }

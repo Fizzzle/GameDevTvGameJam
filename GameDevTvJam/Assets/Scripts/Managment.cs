@@ -14,7 +14,14 @@ public class Managment : MonoBehaviour
     
     [Header("Effect Settings")]
     public ParticleSystem ClickEffect;
+    public ParticleSystem ClickEffectMiss;
 
+    private void Start()
+    {
+        Camera = Camera.main;
+        PlayerMovent = GameObject.FindObjectOfType<PlayerMovent>();
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -38,7 +45,16 @@ public class Managment : MonoBehaviour
                         Destroy(effectClick.gameObject, 1);
                     }
                     
-                } 
+                }
+                else
+                {
+                    if (ClickEffectMiss != null)
+                    {
+                        ParticleSystem EffectMiss = Instantiate(ClickEffectMiss, hit.point,
+                            Quaternion.LookRotation(Camera.transform.position));
+                        Destroy(EffectMiss.gameObject, 1);
+                    }
+                }
             }
             // Пока тут самоповтор кода, вдруг не пригодиться, чтобы не заморачиваться зря
             if (Input.GetMouseButtonUp(1))
