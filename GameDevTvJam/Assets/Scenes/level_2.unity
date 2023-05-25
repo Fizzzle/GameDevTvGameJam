@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2443,12 +2443,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1504705511239064927}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PartL6
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1504705511239064927
 Transform:
@@ -2477,12 +2477,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5341727264479744019}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PartL7
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3428141356593073960
 Transform:
@@ -2530,12 +2530,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5555029427652585757}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Part6
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &5216544090683542209
 GameObject:
@@ -2546,12 +2546,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3811572104401604997}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Part8
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5341727264479744019
 Transform:
@@ -2607,12 +2607,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7740324156330970422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Part7
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &5928451201320974706
 GameObject:
@@ -2623,12 +2623,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3428141356593073960}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PartL8
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &7620089059900201158
 MeshRenderer:

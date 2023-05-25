@@ -15,6 +15,11 @@ public class SwitchSide : MonoBehaviour
     public bool HideDark = true;
     private PlayerMovent PlayerMovent;
 
+    [Header("Side Settings")] public GameObject Wheels;
+    public GameObject Cap;
+    public GameObject Glasses;
+    public GameObject DarkLight;
+
 
     [Header("Effects Settings")] public ParticleSystem LightSideEffects;
     public ParticleSystem DarkSideEffects;
@@ -31,13 +36,20 @@ public class SwitchSide : MonoBehaviour
 
     private void Start()
     {
+        Wheels = GameObject.Find("Wheels");
+        Cap = GameObject.Find("Cap");
+        Glasses = GameObject.Find("Glasses");
+        DarkLight = GameObject.Find("DarkLight");
+        
         if (HideDark)
         {
+            LightSideSkin();
             LightSider.SetActive(true);
             DarkSider.SetActive(false);
         }
         else
         {
+            DarkSideSkin();
             DarkSider.SetActive(true);
             LightSider.SetActive(false);
         }
@@ -69,6 +81,7 @@ public class SwitchSide : MonoBehaviour
                 {
                     if (LightSider.active)
                     {
+                        LightSideSkin();
                         DarkSideEffects.Play();
                     }
                 }
@@ -84,6 +97,7 @@ public class SwitchSide : MonoBehaviour
                 {
                     if (DarkSider.active)
                     {
+                        DarkSideSkin();
                         LightSideEffects.Play();
                     }
                 }
@@ -143,5 +157,20 @@ public class SwitchSide : MonoBehaviour
             
             Time.timeScale = 1f;
         }
+    }
+
+    void LightSideSkin()
+    {
+        Wheels.SetActive(true);
+        Cap.SetActive(true);
+        Glasses.SetActive(false);
+        DarkLight.SetActive(false);
+    }
+    void DarkSideSkin()
+    {
+        Glasses.SetActive(true);
+        DarkLight.SetActive(true);
+        Wheels.SetActive(false);
+        Cap.SetActive(false);
     }
 }

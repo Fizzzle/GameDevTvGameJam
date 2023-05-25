@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -468,6 +468,10 @@ MonoBehaviour:
   LightSider: {fileID: 0}
   DarkSider: {fileID: 0}
   HideDark: 1
+  Wheels: {fileID: 0}
+  Cap: {fileID: 0}
+  Glasses: {fileID: 0}
+  DarkLight: {fileID: 0}
   LightSideEffects: {fileID: 954018449}
   DarkSideEffects: {fileID: 2098399447}
   DamageImage: {fileID: 456182646}
@@ -8695,6 +8699,14 @@ PrefabInstance:
     - target: {fileID: 4838361924618561934, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326012251489622942, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: m_BounceIntensity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932415146783167887, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
