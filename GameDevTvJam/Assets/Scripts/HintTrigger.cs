@@ -9,7 +9,8 @@ using DG.Tweening;
 
 public class HintTrigger : MonoBehaviour
 {
-    //[SerializeField] private string _textToHint;
+    [TextArea(5, 10)]
+    [SerializeField] private string _textToHint;
     [SerializeField] private TMP_Text _hintText;
     [SerializeField] private GameObject _hintPanel;
     [SerializeField] private float _tweenDuration = 1f; // Длительность анимации
@@ -32,7 +33,7 @@ public class HintTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //_hintText.text = _textToHint;
+        _hintText.text = _textToHint;
         if (other.gameObject.CompareTag("Player"))
         {
             _hintPanel.SetActive(true);
@@ -47,6 +48,7 @@ public class HintTrigger : MonoBehaviour
         {
             // Возвращаем панель подсказки в исходное положение, когда игрок покидает зону триггера
             _hintPanel.GetComponent<RectTransform>().DOAnchorPos(_startPosition, _tweenDuration).OnComplete(() => _hintPanel.SetActive(false));
+            Destroy(gameObject, 1f);
         }
     }
 }
