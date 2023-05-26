@@ -40,6 +40,8 @@ public class SwitchSide : MonoBehaviour
 
     private void Start()
     {
+        LightMagicEffect = GameObject.Find("LightMagicEffect").GetComponent<ParticleSystem>();
+        DarkMagicEffect = GameObject.Find("DarkMagicEffect").GetComponent<ParticleSystem>();
         Wheels = GameObject.Find("Wheels");
         Cap = GameObject.Find("Cap");
         Glasses = GameObject.Find("Glasses");
