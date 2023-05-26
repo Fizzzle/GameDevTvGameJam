@@ -8,7 +8,7 @@ public class NavMeshRebake : MonoBehaviour
 {
     private void Start()
     {
-        GetComponent<NavMeshSurface>().BuildNavMesh();
+        Rebake();
         StartCoroutine(WaitStart());
     }
 
@@ -31,6 +31,11 @@ public class NavMeshRebake : MonoBehaviour
     IEnumerator WaitStart()
     {
         yield return new WaitForSeconds(0.5f);
+        GetComponent<NavMeshSurface>().BuildNavMesh();
+    }
+
+    public void Rebake()
+    {
         GetComponent<NavMeshSurface>().BuildNavMesh();
     }
 }
