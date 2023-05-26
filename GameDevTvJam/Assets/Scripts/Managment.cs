@@ -35,6 +35,7 @@ public class Managment : MonoBehaviour
         {
             if (Input.GetMouseButtonUp(0))
             {
+                Debug.Log(hit.collider.tag);
                 if (hit.collider.tag == "Ground")
                 {
                     PlayerMovent.WhenClickOnGround(hit.point);

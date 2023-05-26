@@ -29,6 +29,9 @@ public class SwitchSide : MonoBehaviour
     public ParticleSystem LightMagicEffect;
     public ParticleSystem DarkMagicEffect;
 
+    [Header("Background Settings")] public Image LightBackgroundImage;
+    public Image DarkBackgroundImage;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -52,12 +55,14 @@ public class SwitchSide : MonoBehaviour
             LightSideSkin();
             LightSider.SetActive(true);
             DarkSider.SetActive(false);
+            lightBackground();
         }
         else
         {
             DarkSideSkin();
             DarkSider.SetActive(true);
             LightSider.SetActive(false);
+            darkBackground();
         }
         
     }
@@ -104,7 +109,8 @@ public class SwitchSide : MonoBehaviour
             {
                 LightSideSkin();
                 SwitchSider = !SwitchSider;
-                
+                lightBackground();
+
             }
         }
 
@@ -125,6 +131,7 @@ public class SwitchSide : MonoBehaviour
             {
                 DarkSideSkin();
                 SwitchSider = !SwitchSider;
+                darkBackground();
             }
             
         }
@@ -189,6 +196,7 @@ public class SwitchSide : MonoBehaviour
             if (LightSider.active)
             {
                 LightSideSkin();
+                lightBackground();
                 DarkSideEffects.Play();
                 if (LightMagicEffect != null)
                 {
@@ -209,6 +217,7 @@ public class SwitchSide : MonoBehaviour
             if (DarkSider.active)
             {
                 DarkSideSkin();
+                darkBackground();
                 LightSideEffects.Play();
                 if (DarkMagicEffect != null)
                 {
@@ -216,5 +225,17 @@ public class SwitchSide : MonoBehaviour
                 }
             }
         }
+    }
+
+    void lightBackground()
+    {
+        LightBackgroundImage.enabled = true;
+        DarkBackgroundImage.enabled = false;
+    }
+
+    void darkBackground()
+    {
+        LightBackgroundImage.enabled = false;
+        DarkBackgroundImage.enabled = true;
     }
 }
