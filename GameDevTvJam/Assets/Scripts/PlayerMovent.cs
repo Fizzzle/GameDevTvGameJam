@@ -23,6 +23,7 @@ public class PlayerMovent : MonoBehaviour
     void Update()
     {
         CheckGround();
+        IgnoreLayerMaskOfHintTrigger();
     }
 
     public virtual void WhenClickOnGround(Vector3 point, int MoveSpeed = 3)
@@ -34,5 +35,24 @@ public class PlayerMovent : MonoBehaviour
     void CheckGround()
     {
         isGround = Physics.CheckSphere(groundChecking.position, groundDistance, GroundMask);
+    }
+
+
+    // функция для игнора слой маски триггера подсказок - Serhii
+    void IgnoreLayerMaskOfHintTrigger()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            // создаем LayerMask, чтобы исключить слой "HintTrigger"
+            LayerMask mask = ~LayerMask.GetMask("HintTrigger");
+
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, mask))
+            {
+                NavMeshAgent.SetDestination(hit.point);
+            }
+        }
     }
 }
