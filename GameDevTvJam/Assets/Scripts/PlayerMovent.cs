@@ -34,9 +34,5 @@ public class PlayerMovent : MonoBehaviour
     void CheckGround()
     {
         isGround = Physics.CheckSphere(groundChecking.position, groundDistance, GroundMask);
-        if (!isGround)
-        {
-            NavMeshAgent.speed = 0;
-        }
     }
 }
