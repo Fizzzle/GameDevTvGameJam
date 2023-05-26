@@ -742,9 +742,9 @@ MonoBehaviour:
   Cap: {fileID: 0}
   Glasses: {fileID: 0}
   DarkLight: {fileID: 0}
-  LightSideEffects: {fileID: 954018449}
-  DarkSideEffects: {fileID: 2098399447}
-  DamageImage: {fileID: 456182646}
+  LightSideEffects: {fileID: 0}
+  DarkSideEffects: {fileID: 0}
+  DamageImage: {fileID: 0}
   LightMagicEffect: {fileID: 0}
   DarkMagicEffect: {fileID: 0}
   LightBackgroundImage: {fileID: 1584703506}
@@ -3549,17 +3549,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4986727332626030150, guid: 8805eace01a504bcbaef2fc4ecbe67e3, type: 3}
   m_PrefabInstance: {fileID: 499014416}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &456182646 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 247447638671912929, guid: b875410e53426e444a611ffef05952e2, type: 3}
-  m_PrefabInstance: {fileID: 247447638222087319}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &457294913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7841,11 +7830,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.020000005, z: 0.020000005}
   m_Center: {x: 0.0000000037252903, y: 0.0000000018626451, z: 0}
---- !u!198 &954018449 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 8262031884468093667, guid: 62c6731af0d1e674cb4ca6f258ab7971, type: 3}
-  m_PrefabInstance: {fileID: 7528035147887653644}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &957101162 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4986727332626030150, guid: 8805eace01a504bcbaef2fc4ecbe67e3, type: 3}
@@ -16791,11 +16775,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.020000005, z: 0.020000005}
   m_Center: {x: 0, y: -0.0000000037252903, z: 0}
---- !u!198 &2098399447 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 7435334215707657620, guid: 62c6731af0d1e674cb4ca6f258ab7971, type: 3}
-  m_PrefabInstance: {fileID: 7528035147887653644}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2104639932
 GameObject:
   m_ObjectHideFlags: 0
@@ -18752,6 +18731,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3209424789314059908, guid: 62c6731af0d1e674cb4ca6f258ab7971, type: 3}
+      propertyPath: m_TagString
+      value: LightSideEffect
+      objectReference: {fileID: 0}
     - target: {fileID: 7528035146924338477, guid: 62c6731af0d1e674cb4ca6f258ab7971, type: 3}
       propertyPath: m_Name
       value: GroundParticl

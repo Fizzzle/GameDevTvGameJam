@@ -43,12 +43,17 @@ public class SwitchSide : MonoBehaviour
 
     private void Start()
     {
+        LightSideEffects = GameObject.FindWithTag("LightSideEffect").GetComponent<ParticleSystem>();
+        DarkSideEffects = GameObject.FindWithTag("DarkSideEffect").GetComponent<ParticleSystem>();
         LightMagicEffect = GameObject.Find("LightMagicEffect").GetComponent<ParticleSystem>();
         DarkMagicEffect = GameObject.Find("DarkMagicEffect").GetComponent<ParticleSystem>();
+        DamageImage = GameObject.Find("DamageScreen").GetComponent<Image>();
         Wheels = GameObject.Find("Wheels");
         Cap = GameObject.Find("Cap");
         Glasses = GameObject.Find("Glasses");
         DarkLight = GameObject.Find("DarkLight");
+        LightBackgroundImage = GameObject.Find("BackgroundLight").GetComponent<Image>();
+        DarkBackgroundImage = GameObject.Find("BackgroundDark").GetComponent<Image>();
         
         if (HideDark)
         {
