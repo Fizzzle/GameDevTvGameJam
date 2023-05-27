@@ -6,23 +6,33 @@ public class Rotate : MonoBehaviour
 
 	public void RotateFigure ()
 	{
-        rotatingClockwise = !rotatingClockwise;
-        AudioManager.Instance.PlayTurnBlockSound();
-
         if (rotatingClockwise && (transform.eulerAngles.z > 270 || transform.eulerAngles.z <= 0))
-	    {
+        {
             transform.Rotate(0, 0, -1);
-	    }
-	    else if (!rotatingClockwise && transform.eulerAngles.z > 0)
-	    {
+        }
+        else if (!rotatingClockwise && transform.eulerAngles.z > 0)
+        {
             transform.Rotate(0, 0, 1);
-        
+
         }
 
-   //     if (Input.GetKeyDown(KeyCode.E))
-	  //  {
-	  //      rotatingClockwise = !rotatingClockwise;
-			//AudioManager.Instance.PlayTurnBlockSound(); // звук переключения блока 
-	  //  }
-	}
+        //if (Input.GetKeyDown(KeyCode.E))
+       // {
+            
+       // }
+
+
+    }
+
+    public void Rotation()
+    {
+        rotatingClockwise = !rotatingClockwise;
+        AudioManager.Instance.PlayTurnBlockSound(); // звук переключения блока 
+    }
+
+    //private void Update()
+    //{
+    //    RotateFigure();
+
+    //}
 }

@@ -11,6 +11,7 @@ public class Managment : MonoBehaviour
     [Header("Player Setting")]
     public Camera Camera;
     public PlayerMovent PlayerMovent;
+    public Rotate Rotate;
     
     [Header("Effect Settings")]
     public ParticleSystem ClickEffect;
@@ -33,7 +34,8 @@ public class Managment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Rotate.RotateFigure();
+
         Ray ray = Camera.ScreenPointToRay(Input.mousePosition);
 
         RaycastHit hit = default;
@@ -54,6 +56,13 @@ public class Managment : MonoBehaviour
                     }
                     
                 }
+
+                //Katya add...
+                else if (hit.collider.tag == "StartPos")
+                {
+                    Rotate.Rotation();
+                }
+
                 else
                 {
                     if (ClickEffectMiss != null)

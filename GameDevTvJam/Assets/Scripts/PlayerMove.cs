@@ -7,35 +7,38 @@ public class PlayerMove : MonoBehaviour
 
     private Vector3[] newPosition;
 
+    public GameObject Player;
+
     private int curPos;
-    private bool movementStarted;
+    private bool movementStarted = false;
 
-    private void Start()
-    {
-        newPosition = NewPositionByPath(PathPoints);
-        movementStarted = false;
-    }
+    //private void Start()
+    //{
+    //    newPosition = NewPositionByPath(PathPoints);
+    //    movementStarted = false;
+    //}
 
-    private void Update()
-    {
-        if (!movementStarted && Input.anyKeyDown)
-        {
-            transform.position = newPosition[0];
-            movementStarted = true;
-            curPos = 0;
-        }
+    //private void Update()
+    //{
+    //    if (!movementStarted && Input.anyKeyDown)
+    //        //if (!movementStarted)
+    //        {
+    //            transform.position = newPosition[0];
+    //            movementStarted = true;
+    //            curPos = 0;
+    //        }
 
-        if (movementStarted && curPos < newPosition.Length)
-        {
-            MoveTowardsNextPosition();
-        }
-    }
+    //    if (movementStarted && curPos < newPosition.Length)
+    //    {
+    //        MoveTowardsNextPosition();
+    //    }
+    //}
 
     void MoveTowardsNextPosition()
     {
-        transform.position = Vector3.MoveTowards(transform.position, newPosition[curPos], Speed * Time.deltaTime);
+        Player.transform.position = Vector3.MoveTowards(Player.transform.position, newPosition[curPos], Speed * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, newPosition[curPos]) < 0.2f)
+        if (Vector3.Distance(Player.transform.position, newPosition[curPos]) < 0.2f)
         {
             curPos++;
         }
@@ -52,11 +55,34 @@ public class PlayerMove : MonoBehaviour
         return pathPositions;
     }
 
+    public void FollowThePath()
+    {
+        //if (!movementStarted)
+        //{
+        //    transform.position = newPosition[0];
+        //    movementStarted = true;
+        //    curPos = 0;
+        //}
+
+        Debug.Log("movementStarted " + movementStarted);
+
+        if (movementStarted && curPos < newPosition.Length)
+        {
+            MoveTowardsNextPosition();
+        }
+    }
+
     public void MoveAfterRotate()
     {
         newPosition = NewPositionByPath(PathPoints);
+        Player.transform.position = newPosition[0];
+        movementStarted = true;
         curPos = 0;
-        transform.position = newPosition[0];
-        movementStarted = false;
+
+        
+        //curPos = 0;
+        //transform.position = newPosition[0];
+        //movementStarted = false;
+        Debug.Log("&&&");
     }
 }
