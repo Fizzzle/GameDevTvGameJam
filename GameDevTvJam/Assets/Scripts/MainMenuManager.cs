@@ -13,18 +13,19 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] GameObject optionsUI; // объект для UI окна параметров
     [SerializeField] GameObject authorsUI; // объект для UI окна авторов
     [SerializeField] AudioSource menuMusic; // объект для UI окна авторов
-    [SerializeField] Toggle musicOnOff; // объект для UI окна авторов
+    //[SerializeField] Toggle musicOnOff; // объект для UI окна авторов
 
     // Start is called before the first frame update
     void Start()
     {
         optionsUI.SetActive(false); // Изначально окна настроек и авторов не активны
         authorsUI.SetActive(false);
-        musicOnOff.onValueChanged.AddListener(ToggleMusic);
+       // musicOnOff.onValueChanged.AddListener(ToggleMusic);
     }
 
     // Update is called once per frame
     void Update()
+
     {
 
     }
