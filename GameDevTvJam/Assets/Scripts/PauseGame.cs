@@ -4,13 +4,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PauseGame : MonoBehaviour
 {
     [SerializeField] private GameObject _pauseUI;      // объкт для UI окна паузы Panel
-    [SerializeField] private AudioSource _inGameMusic; // объект для UI окна авторов
-    [SerializeField] private Toggle _musicOnOff;       // объект для UI окна авторов
+    public static bool isPaused = false;
 
     private bool _isGamePaused = false;
 
@@ -18,7 +18,6 @@ public class PauseGame : MonoBehaviour
     void Start()
     {
         _pauseUI.SetActive(false);
-        _musicOnOff.onValueChanged.AddListener(ToggleMusic);
     }
 
     // Update is called once per frame
@@ -39,16 +38,24 @@ public class PauseGame : MonoBehaviour
         _pauseUI.SetActive(_isGamePaused); // активируем или деактивируем UI паузы в зависимости от состояния паузы
     }
 
-    // функция для включения выключения музыки в игре - Sergey
-    public void ToggleMusic(bool isMusicEnabled)
+    // функция для возобновления игры (снять паузу)
+    public void ResumeGame()
     {
-        if (isMusicEnabled)
-        {
-            _inGameMusic.Play();
-        }
-        else
-        {
-            _inGameMusic.Stop();
-        }
+        isPaused = false;
+        Time.timeScale = 1; // возобновляем ход времени
+        _pauseUI.SetActive(false);
+    }
+
+    // функция для выхода в главное меню
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1; // убедимся, что время идет нормально
+        SceneManager.LoadScene("startMenu"); // замените "MainMenu" на имя вашей сцены главного меню
+    }
+
+    // функция для выхода из игры
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
