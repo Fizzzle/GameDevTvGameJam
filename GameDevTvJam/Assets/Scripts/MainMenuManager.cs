@@ -29,10 +29,10 @@ public class MainMenuManager : MonoBehaviour
 
     }
 
-    // функция для начала игры (level_1) - Sergey
+    // функция для начала игры (MainScene) - Sergey
     public void StartGame()
     {
-        SceneManager.LoadScene("level_1"); // Замените "Level_1" на имя вашей сцены с первым уровнем
+        SceneManager.LoadScene("MainScene");
     }
 
     // функция для открытия UI окна для параметров - Sergey
