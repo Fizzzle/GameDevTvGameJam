@@ -7,25 +7,21 @@ using UnityEngine;
 // Author Viktor
 public class Managment : MonoBehaviour
 {
-    
+
     [Header("Player Setting")]
     public Camera Camera;
     public PlayerMovent PlayerMovent;
     public Rotate Rotate;
-    
+
     [Header("Effect Settings")]
     public ParticleSystem ClickEffect;
     public ParticleSystem ClickEffectMiss;
-    
-    [Header("Effect Settings")]
-    public Texture2D cursorTexture;
-    public Texture2D cursorTextureDark;
-    public Vector2 cursorSize = new Vector2(32, 32);
-    public Vector2 cursorOffset = new Vector2(6, 29);
+
+
 
     private void Start()
     {
-        Cursor.visible = false;
+
         Camera = Camera.main;
         PlayerMovent = GameObject.FindObjectOfType<PlayerMovent>();
 
@@ -54,13 +50,18 @@ public class Managment : MonoBehaviour
                             Quaternion.LookRotation(Camera.transform.position));
                         Destroy(effectClick.gameObject, 1);
                     }
-                    
+
                 }
 
                 //Katya add...
                 else if (hit.collider.tag == "StartPos")
                 {
-                    Rotate.Rotation();
+                    if (PlayerMovent.isMove)
+                    {
+                        Rotate.Rotation();
+                    }
+
+
                 }
 
                 else
@@ -85,17 +86,11 @@ public class Managment : MonoBehaviour
                             Quaternion.LookRotation(Camera.transform.position));
                         Destroy(effectClick, 1);
                     }
-                   
-                } 
+
+                }
             }
         }
     }
 
-    void OnGUI()
-    {
-        
-        Vector2 mousePosition = Event.current.mousePosition;
-        Rect cursorRect = new Rect(mousePosition.x - cursorOffset.x, mousePosition.y - cursorOffset.y, cursorSize.x, cursorSize.y);
-        GUI.DrawTexture(cursorRect, cursorTexture);
-    }
+
 }

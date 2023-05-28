@@ -36,6 +36,11 @@ public class PlayerMove : MonoBehaviour
 
     void MoveTowardsNextPosition()
     {
+        //Viktor
+        Vector3 LookForward = newPosition[curPos] - Player.transform.position;
+        Player.transform.rotation = Quaternion.LookRotation(LookForward);
+
+
         Player.transform.position = Vector3.MoveTowards(Player.transform.position, newPosition[curPos], Speed * Time.deltaTime);
 
         if (Vector3.Distance(Player.transform.position, newPosition[curPos]) < 0.2f)
@@ -64,7 +69,7 @@ public class PlayerMove : MonoBehaviour
         //    curPos = 0;
         //}
 
-        Debug.Log("movementStarted " + movementStarted);
+        //Debug.Log("movementStarted " + movementStarted);
 
         if (movementStarted && curPos < newPosition.Length)
         {
@@ -79,10 +84,10 @@ public class PlayerMove : MonoBehaviour
         movementStarted = true;
         curPos = 0;
 
-        
+
         //curPos = 0;
         //transform.position = newPosition[0];
         //movementStarted = false;
-        Debug.Log("&&&");
+        //Debug.Log("&&&");
     }
 }

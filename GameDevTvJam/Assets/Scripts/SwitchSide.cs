@@ -16,6 +16,7 @@ public class SwitchSide : MonoBehaviour
     private bool SwitchActive = true;
     public bool HideDark = true;
     private PlayerMovent PlayerMovent;
+    public bool Light;
 
     [Header("Side Settings")] public GameObject Wheels;
     public GameObject Cap;
@@ -54,7 +55,7 @@ public class SwitchSide : MonoBehaviour
         DarkLight = GameObject.Find("DarkLight");
         LightBackgroundImage = GameObject.Find("BackgroundLight").GetComponent<Image>();
         DarkBackgroundImage = GameObject.Find("BackgroundDark").GetComponent<Image>();
-        
+
         if (HideDark)
         {
             LightSideSkin();
@@ -69,7 +70,7 @@ public class SwitchSide : MonoBehaviour
             LightSider.SetActive(false);
             darkBackground();
         }
-        
+
     }
 
     // Update is called once per frame
@@ -96,8 +97,8 @@ public class SwitchSide : MonoBehaviour
 
                 }
             }
-            
-            
+
+
         }
     }
 
@@ -119,10 +120,10 @@ public class SwitchSide : MonoBehaviour
             }
         }
 
-        
+
 
     }
-    
+
     IEnumerator CheckerLight()
     {
         yield return new WaitForSeconds(0.1f);
@@ -138,18 +139,18 @@ public class SwitchSide : MonoBehaviour
                 SwitchSider = !SwitchSider;
                 darkBackground();
             }
-            
+
         }
-        
+
     }
-    
+
     IEnumerator ShowEffectDamage()
     {
         if (DamageImage != null)
         {
             SwitchActive = false;
             DamageImage.enabled = true;
-            for (float t = 0.9f; t > 0f; t-= Time.deltaTime * 0.5f)
+            for (float t = 0.9f; t > 0f; t -= Time.deltaTime * 0.5f)
             {
                 DamageImage.color = new Color(0f, 0.4912767f, 1f, t);
                 yield return null;
@@ -157,20 +158,20 @@ public class SwitchSide : MonoBehaviour
             SwitchActive = true;
             DamageImage.enabled = false;
         }
-        
-        
+
+
     }
 
     void DarkSiderProperties()
     {
         if (DarkSider.active)
         {
-            
+
             Time.timeScale = 0.7f;
         }
         else
         {
-            
+
             Time.timeScale = 1f;
         }
     }
@@ -181,6 +182,7 @@ public class SwitchSide : MonoBehaviour
         Cap.SetActive(true);
         Glasses.SetActive(false);
         DarkLight.SetActive(false);
+        Light = true;
     }
     void DarkSideSkin()
     {
@@ -188,6 +190,7 @@ public class SwitchSide : MonoBehaviour
         DarkLight.SetActive(true);
         Wheels.SetActive(false);
         Cap.SetActive(false);
+        Light = false;
     }
 
     void SwitchSiderLight()

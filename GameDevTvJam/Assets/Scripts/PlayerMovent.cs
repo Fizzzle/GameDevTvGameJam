@@ -13,20 +13,27 @@ public class PlayerMovent : MonoBehaviour
 
     [Header("MoveSetting Settings")]
     public NavMeshAgent NavMeshAgent;
-    
+
+    public bool isMove;
+
     [Header("GroundChecking Settings")]
     public Transform groundChecking;
     public float groundDistance = 0.4f;
     public LayerMask GroundMask;
     public bool isGround;
 
+    private void Start()
+    {
+        isMove = true;
+    }
 
     //Katya add...
     public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag =="StartPos")
+        if (other.gameObject.tag == "StartPos")
         {
             NavMeshAgent.enabled = false;
+            isMove = false;
             PlayerMove.MoveAfterRotate();
             Debug.Log("other.gameObject.tag" + "++++");
         }
@@ -43,7 +50,12 @@ public class PlayerMovent : MonoBehaviour
 
     public virtual void WhenClickOnGround(Vector3 point, int MoveSpeed = 3)
     {
-        NavMeshAgent.SetDestination(point);
+        //Viktor
+        if (isMove)
+        {
+            NavMeshAgent.SetDestination(point);
+        }
+
         NavMeshAgent.speed = MoveSpeed;
     }
 
@@ -66,7 +78,12 @@ public class PlayerMovent : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, mask))
             {
-                NavMeshAgent.SetDestination(hit.point);
+                //Viktor
+                if (isMove)
+                {
+                    NavMeshAgent.SetDestination(hit.point);
+                }
+
             }
         }
     }
