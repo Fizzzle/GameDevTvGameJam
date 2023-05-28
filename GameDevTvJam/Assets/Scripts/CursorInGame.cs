@@ -29,14 +29,22 @@ public class CursorInGame : MonoBehaviour
 
     void OnGUI()
     {
-        if (SwitchSide.Light)
+        if (SwitchSide != null)
         {
-            CursorVisible(cursorTexture);
+            if (SwitchSide.Light)
+            {
+                CursorVisible(cursorTexture);
+            }
+            else
+            {
+                CursorVisible(cursorTextureDark);
+            }
         }
         else
         {
-            CursorVisible(cursorTextureDark);
+            CursorVisible(cursorTexture);
         }
+        
     }
 
     void CursorVisible(Texture2D cursorObject)
