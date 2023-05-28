@@ -30,7 +30,11 @@ public class Managment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Rotate.RotateFigure();
+        if(Rotate)
+        {
+            Rotate.RotateFigure();
+        }
+        
 
         Ray ray = Camera.ScreenPointToRay(Input.mousePosition);
 
@@ -56,12 +60,13 @@ public class Managment : MonoBehaviour
                 //Katya add...
                 else if (hit.collider.tag == "StartPos")
                 {
-                    if (PlayerMovent.isMove)
+                    if(Rotate)
                     {
-                        Rotate.Rotation();
+                        if (PlayerMovent.isMove)
+                        {
+                            Rotate.Rotation();
+                        }
                     }
-
-
                 }
 
                 else
