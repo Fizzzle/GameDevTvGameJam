@@ -4,21 +4,22 @@ https://youtu.be/3bFPbiZvAns = Trailer
 <img src="https://i.ibb.co/Dp5rhHr/image.jpg" alt="" height=250px>
 
 Team : <p>
-1 3D Artist = Volodimir
+  
+1 3D Artist =  <a href="https://www.instagram.com/fruitsic/">Volodimir</a>
   <p>
-1 Illustrator = Elizabeth Revo
+1 Illustrator = <a href="https://www.instagram.com/kinky_tattoo/">Elizabeth Revo</a>
     <p>
 3 Programmers :
       <p>
-Katerina
-        (Level design, puzzles, bugs)
-        <p>
-Serhii 
-          (Music, hints, bugs)
-          <p>
-Viktor(I'm)
-            (Player Move, Particle, Changing a dimension, bugs) 
+        <div><a href="https://github.com/Sedjex">Katerina (Level design, Puzzles, Rotate figure, bugs)</a></div>
 
+        
+<p><div><a href="https://github.com/too-spesher">Serhii (Music, Hints, Animation, bugs)</a></div>
+<p><div><a href="https://github.com/Fizzzle">Viktor(I'm) (Player Move, Particle, Changing a dimension, bugs) </a></div>
+
+            
+<p>
+<p>
 10 days to come up with and release a game
 
 ScreenShots : <p>
