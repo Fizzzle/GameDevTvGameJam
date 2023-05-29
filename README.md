@@ -3,13 +3,21 @@ https://youtu.be/3bFPbiZvAns = Trailer
 
 <img src="https://i.ibb.co/Dp5rhHr/image.jpg" alt="" height=250px>
 
-Team : 
+Team : <p>
 1 3D Artist = Volodimir
+  <p>
 1 Illustrator = Elizabeth Revo
+    <p>
 3 Programmers :
+      <p>
 Katerina
+        (Level design, puzzles, bugs)
+        <p>
 Serhii 
+          (Music, hints, bugs)
+          <p>
 Viktor(I'm)
+            (Player Move, Particle, Changing a dimension, bugs) 
 
 10 days to come up with and release a game
 
