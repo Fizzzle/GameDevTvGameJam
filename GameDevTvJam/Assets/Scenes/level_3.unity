@@ -538,7 +538,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d859a3d6ca010420f89462fe58b86699, type: 2}
     - target: {fileID: 919132149155446097, guid: ce6cd8e6bcc274c1fa779d8c6714d6fc, type: 3}
       propertyPath: m_Name
-      value: Cube1 (1)
+      value: cubeFIn
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ce6cd8e6bcc274c1fa779d8c6714d6fc, type: 3}
       propertyPath: m_Layer
@@ -1469,6 +1469,18 @@ PrefabInstance:
     - target: {fileID: 4611961275915727942, guid: 3c760704c863a4e1b9622f8658a14730, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611961275915727943, guid: 3c760704c863a4e1b9622f8658a14730, type: 3}
+      propertyPath: m_Value
+      value: -226
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611961275915727943, guid: 3c760704c863a4e1b9622f8658a14730, type: 3}
+      propertyPath: m_MaxValue
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611961275915727943, guid: 3c760704c863a4e1b9622f8658a14730, type: 3}
+      propertyPath: m_MinValue
+      value: -226
       objectReference: {fileID: 0}
     - target: {fileID: 4611961275915727943, guid: 3c760704c863a4e1b9622f8658a14730, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3050,6 +3062,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 962070642591262402, guid: 6cc95b2cea0a94bab823ada6f4246269, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 962070642591262403, guid: 6cc95b2cea0a94bab823ada6f4246269, type: 3}
+      propertyPath: m_Value
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 962070642591262403, guid: 6cc95b2cea0a94bab823ada6f4246269, type: 3}
+      propertyPath: m_MaxValue
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 962070642591262403, guid: 6cc95b2cea0a94bab823ada6f4246269, type: 3}
+      propertyPath: m_MinValue
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 962070642591262403, guid: 6cc95b2cea0a94bab823ada6f4246269, type: 3}
@@ -5239,7 +5263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ce6cd8e6bcc274c1fa779d8c6714d6fc, type: 3}
       propertyPath: m_Name
-      value: Cube1
+      value: CubeStart
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ce6cd8e6bcc274c1fa779d8c6714d6fc, type: 3}
       propertyPath: m_Layer
@@ -5355,6 +5379,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 884743207}
     m_Modifications:
+    - target: {fileID: 2672898738519265276, guid: c68598b936b284f3eb701b9248e587e9, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672898738519265276, guid: c68598b936b284f3eb701b9248e587e9, type: 3}
+      propertyPath: m_MaxValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672898738519265276, guid: c68598b936b284f3eb701b9248e587e9, type: 3}
+      propertyPath: m_MinValue
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 2672898738519265276, guid: c68598b936b284f3eb701b9248e587e9, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

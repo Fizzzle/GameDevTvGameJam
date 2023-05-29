@@ -1329,6 +1329,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 874699902}
     m_Modifications:
     - target: {fileID: 2672898738519265276, guid: c68598b936b284f3eb701b9248e587e9, type: 3}
+      propertyPath: m_Value
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672898738519265276, guid: c68598b936b284f3eb701b9248e587e9, type: 3}
+      propertyPath: m_MaxValue
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672898738519265276, guid: c68598b936b284f3eb701b9248e587e9, type: 3}
+      propertyPath: m_MinValue
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672898738519265276, guid: c68598b936b284f3eb701b9248e587e9, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 874699898}
@@ -1406,7 +1418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2672898738519265279, guid: c68598b936b284f3eb701b9248e587e9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2672898738519265279, guid: c68598b936b284f3eb701b9248e587e9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4910,23 +4922,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 962070640922291465, guid: 6cc95b2cea0a94bab823ada6f4246269, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 962070640922291465, guid: 6cc95b2cea0a94bab823ada6f4246269, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 962070641394999173, guid: 6cc95b2cea0a94bab823ada6f4246269, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 962070641394999173, guid: 6cc95b2cea0a94bab823ada6f4246269, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 962070641394999173, guid: 6cc95b2cea0a94bab823ada6f4246269, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 962070642591262402, guid: 6cc95b2cea0a94bab823ada6f4246269, type: 3}
       propertyPath: m_Pivot.x
@@ -5023,6 +5035,10 @@ PrefabInstance:
     - target: {fileID: 962070642591262404, guid: 6cc95b2cea0a94bab823ada6f4246269, type: 3}
       propertyPath: m_Name
       value: SliderY (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 962070642591262404, guid: 6cc95b2cea0a94bab823ada6f4246269, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cc95b2cea0a94bab823ada6f4246269, type: 3}
@@ -9380,27 +9396,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4611961274428115145, guid: 3c760704c863a4e1b9622f8658a14730, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.375
       objectReference: {fileID: 0}
     - target: {fileID: 4611961274428115145, guid: 3c760704c863a4e1b9622f8658a14730, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4611961274428115145, guid: 3c760704c863a4e1b9622f8658a14730, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.375
       objectReference: {fileID: 0}
     - target: {fileID: 4611961275166145081, guid: 3c760704c863a4e1b9622f8658a14730, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.375
       objectReference: {fileID: 0}
     - target: {fileID: 4611961275166145081, guid: 3c760704c863a4e1b9622f8658a14730, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4611961275915727940, guid: 3c760704c863a4e1b9622f8658a14730, type: 3}
       propertyPath: m_Name
       value: SliderX (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611961275915727940, guid: 3c760704c863a4e1b9622f8658a14730, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4611961275915727942, guid: 3c760704c863a4e1b9622f8658a14730, type: 3}
       propertyPath: m_Pivot.x
