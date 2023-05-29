@@ -18579,6 +18579,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 537118628, guid: b875410e53426e444a611ffef05952e2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 28.800049
+      objectReference: {fileID: 0}
+    - target: {fileID: 537118629, guid: b875410e53426e444a611ffef05952e2, type: 3}
+      propertyPath: m_text
+      value: 'Problems? It''s too hard for you?
+
+        Press "K" to change level'
+      objectReference: {fileID: 0}
     - target: {fileID: 247447636764058320, guid: b875410e53426e444a611ffef05952e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -19572,6 +19582,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 481136823938515926, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.314
+      objectReference: {fileID: 0}
     - target: {fileID: 4838361924618561921, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -19627,6 +19641,14 @@ PrefabInstance:
     - target: {fileID: 4838361924618561934, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6121055773291816856, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875031133861843980, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.165
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
