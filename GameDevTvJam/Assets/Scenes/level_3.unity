@@ -201,6 +201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartPosition
       objectReference: {fileID: 0}
+    - target: {fileID: 9059141525969859237, guid: 5e04c26e205f60a4682a574ba1d5423d, type: 3}
+      propertyPath: m_TagString
+      value: StartPos
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e04c26e205f60a4682a574ba1d5423d, type: 3}
 --- !u!4 &6151374 stripped
@@ -502,19 +506,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce6cd8e6bcc274c1fa779d8c6714d6fc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5018728
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce6cd8e6bcc274c1fa779d8c6714d6fc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.5018728
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce6cd8e6bcc274c1fa779d8c6714d6fc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.49812022
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce6cd8e6bcc274c1fa779d8c6714d6fc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.49812022
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce6cd8e6bcc274c1fa779d8c6714d6fc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -526,7 +530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce6cd8e6bcc274c1fa779d8c6714d6fc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -89.57
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: ce6cd8e6bcc274c1fa779d8c6714d6fc, type: 3}
       propertyPath: m_Enabled
@@ -5463,7 +5467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2672898738519265276, guid: c68598b936b284f3eb701b9248e587e9, type: 3}
       propertyPath: m_MinValue
-      value: -89.57
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 2672898738519265276, guid: c68598b936b284f3eb701b9248e587e9, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
