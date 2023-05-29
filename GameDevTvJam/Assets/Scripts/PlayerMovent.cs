@@ -34,7 +34,7 @@ public class PlayerMovent : MonoBehaviour
     {
         if (other.gameObject.tag == "StartPos")
         {
-            if(Math.Abs(FigureFin.transform.rotation.x-FigureStart.transform.rotation.x)<=1f && Math.Abs(FigureFin.transform.rotation.y - FigureStart.transform.rotation.y) <= 1f && Math.Abs(FigureFin.transform.rotation.z - FigureStart.transform.rotation.z) <= 1f)
+            if(FigureFin.transform.rotation.x == FigureStart.transform.rotation.x && FigureFin.transform.rotation.y == FigureStart.transform.rotation.y && FigureFin.transform.rotation.z ==FigureStart.transform.rotation.z)
             {
                 NavMeshAgent.enabled = false;
                 isMove = false;
