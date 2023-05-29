@@ -1,0 +1,64 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="AudioSlider">
+			<method name="OnMusicSliderValueChange"/>
+			<method name="OnMusicSliderValueChange"/>
+			<method name="OnMusicSliderValueChange"/>
+			<method name="OnMusicSliderValueChange"/>
+			<method name="OnMusicSliderValueChange"/>
+			<method name="OnMusicSliderValueChange"/>
+			<method name="OnSoundEffectsSliderValueChange"/>
+			<method name="OnSoundEffectsSliderValueChange"/>
+			<method name="OnSoundEffectsSliderValueChange"/>
+			<method name="OnSoundEffectsSliderValueChange"/>
+			<method name="OnSoundEffectsSliderValueChange"/>
+			<method name="OnSoundEffectsSliderValueChange"/>
+		</type>
+		<type fullname="MainMenuManager">
+			<method name="OpenAuthorsUI"/>
+			<method name="OpenSettingsUI"/>
+			<method name="QuitGame"/>
+			<method name="StartGame"/>
+		</type>
+		<type fullname="PauseGame">
+			<method name="GoToMainMenu"/>
+			<method name="GoToMainMenu"/>
+			<method name="GoToMainMenu"/>
+			<method name="GoToMainMenu"/>
+			<method name="GoToMainMenu"/>
+			<method name="GoToMainMenu"/>
+			<method name="QuitGame"/>
+			<method name="QuitGame"/>
+			<method name="QuitGame"/>
+			<method name="QuitGame"/>
+			<method name="QuitGame"/>
+			<method name="QuitGame"/>
+			<method name="ResumeGame"/>
+			<method name="ResumeGame"/>
+			<method name="ResumeGame"/>
+			<method name="ResumeGame"/>
+			<method name="ResumeGame"/>
+			<method name="ResumeGame"/>
+		</type>
+		<type fullname="RotateSliders">
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+			<method name="ChangeValue"/>
+		</type>
+	</assembly>
+</linker>
