@@ -1603,9 +1603,17 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4838361924618561932, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: FigureFin
+      value: 
+      objectReference: {fileID: 8268330536248719635}
+    - target: {fileID: 4838361924618561932, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
       propertyPath: PlayerMove
       value: 
       objectReference: {fileID: 1339168864}
+    - target: {fileID: 4838361924618561932, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
+      propertyPath: FigureStart
+      value: 
+      objectReference: {fileID: 794646194}
     - target: {fileID: 4838361924618561934, guid: 45c4844c752c2f34c8a7f507f931437c, type: 3}
       propertyPath: m_RootOrder
       value: 1
