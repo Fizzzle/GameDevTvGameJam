@@ -22,6 +22,8 @@ public class PlayerMovent : MonoBehaviour
     public LayerMask GroundMask;
     public bool isGround;
 
+    public GameObject FigureStart, FigureFin;
+
     private void Start()
     {
         isMove = true;
@@ -32,10 +34,13 @@ public class PlayerMovent : MonoBehaviour
     {
         if (other.gameObject.tag == "StartPos")
         {
-            NavMeshAgent.enabled = false;
-            isMove = false;
-            PlayerMove.MoveAfterRotate();
-            Debug.Log("other.gameObject.tag" + "++++");
+            if(Math.Abs(FigureFin.transform.rotation.x-FigureStart.transform.rotation.x)<=1f && Math.Abs(FigureFin.transform.rotation.y - FigureStart.transform.rotation.y) <= 1f && Math.Abs(FigureFin.transform.rotation.z - FigureStart.transform.rotation.z) <= 1f)
+            {
+                NavMeshAgent.enabled = false;
+                isMove = false;
+                PlayerMove.MoveAfterRotate();
+                //Debug.Log("other.gameObject.tag" + "++++");
+            }
         }
     }
 
